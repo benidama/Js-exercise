@@ -11,9 +11,9 @@ console.log(num1 * num2);
 console.log(num1 / num2);
 
 //Exercise 2
-let greetings = "Hi, ";
+let greetings = "Hi";
 let named = "Eric";
-const program = greetings.concat(named);
+const program = greetings.concat(", ", named);
 document.write(program + "!");
 
 //Exercise 3
@@ -24,15 +24,15 @@ document.querySelector(".button").addEventListener("click", () => {
 //Exercise 4
 const num = 15;
 //Show double
-document.querySelector(".button-show").addEventListener("click", () => {
+document.querySelector(".button-show1").addEventListener("click", () => {
   alert(num * 2);
 });
 //Show triple
-document.querySelector(".button-show").addEventListener("click", () => {
+document.querySelector(".button-show2").addEventListener("click", () => {
   alert(num * 3);
 });
 //Show half
-document.querySelector(".button-show").addEventListener("click", () => {
+document.querySelector(".button-show3").addEventListener("click", () => {
   alert(num / 2);
 });
 
