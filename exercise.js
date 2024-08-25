@@ -17,31 +17,28 @@ const program = greetings.concat(named);
 document.write(program + "!");
 
 //Exercise 3
-function favColor() {
-  document.querySelector(".button").addEventListener("click", (color) => {
-    alert("Green");
-  });
-}
+document.querySelector(".button").addEventListener("click", () => {
+  alert("My favorite color is Green");
+});
 
 //Exercise 4
 const num = 15;
 //Show double
-function showDouble() {
-  document.querySelector(".button-show").addEventListener("click", (double) => {
-    alert(num * 2);
-  });
-}
+document.querySelector(".button-show").addEventListener("click", () => {
+  alert(num * 2);
+});
 //Show triple
-function showTriple() {
-  document.querySelector(".button-show").addEventListener("click", (triple) => {
-    alert(num * 3);
-  });
-}
+document.querySelector(".button-show").addEventListener("click", () => {
+  alert(num * 3);
+});
 //Show half
-function showHalf() {
-  document.querySelector(".button-show").addEventListener("click", (half) => {
-    alert(num / 2);
-  });
-}
+document.querySelector(".button-show").addEventListener("click", () => {
+  alert(num / 2);
+});
 
 //Exercises 5
+let count = 0;
+document.getElementById("countClick").addEventListener("click", () => {
+  count += 1;
+  console.log("Clicked " + count);
+});
